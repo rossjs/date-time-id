@@ -1,4 +1,4 @@
-function createDateId({ timeZone, locale } = {}) {
+function createDateId({ timeZone, locale, ...otherOptions } = {}) {
   const dateInMilliseconds = Date.now();
 
   const date = new Intl.DateTimeFormat(locale || 'en-US', {
@@ -9,6 +9,7 @@ function createDateId({ timeZone, locale } = {}) {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
+    ...otherOptions,
   }).format(new Date())
     .replace(/\//g, '-');
 
