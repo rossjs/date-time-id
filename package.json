@@ -1,0 +1,10 @@
+{
+  "name": "date-time-id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": ["sync", "id", "date", "time"],
+  "author": "Ross Topol",
+  "license": "ISC"
+}
